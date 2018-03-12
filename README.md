@@ -9,6 +9,7 @@ $ git clone https://github.com/BrayanIribe/API_SEPOMEX_PHP
 Después, hay que hacer el siguiente procedimiento:
 
 1 - Ejecutar el archivo CP.SQL en MySQL (es decir, importarlo y crear la respectiva base de datos).
+
 2 - Ejecutar el archivo UPDATE.PHP (para almacenar toda la información de CP).
 
 Si queremos obtener información de determinado CP podemos acceder
@@ -23,11 +24,17 @@ http://localhost:82/index.php?cp=40000
 El resultado (correcto) sería un JSON de la siguiente forma:
 
 {
+
   "colonias":["IGUALA DE LA INDEPENDENCIA CENTRO"],
+  
   "municipio":"IGUALA DE LA INDEPENDENCIA",
+  
   "ciudad":"IGUALA DE LA INDEPENDENCIA",
+  
   "estado":"GUERRERO",
+  
   "cp":"40000"
+  
 }
 
 Si se desea actualizar la base de datos, podemos ejecutar el fichero
